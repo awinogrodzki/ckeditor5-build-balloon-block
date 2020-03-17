@@ -101,6 +101,13 @@ BalloonEditor.defaultConfig = {
 			'imageStyle:alignLeft',
 			'imageStyle:alignCenter',
 			'imageStyle:alignRight'
+		],
+		styles: [
+			'side',
+			'full',
+			'alignLeft',
+			'alignCenter',
+			'alignRight'
 		]
 	},
 	table: {
