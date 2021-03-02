@@ -31,6 +31,9 @@ import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefrom
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
+import FontSize from '@ckeditor/ckeditor5-font/src/fontsize';
+import FontColor from '@ckeditor/ckeditor5-font/src/fontcolor';
+import FontBackgroundColor from '@ckeditor/ckeditor5-font/src/fontbackgroundcolor';
 
 import '../theme/theme.css';
 
@@ -62,7 +65,10 @@ BalloonEditor.builtinPlugins = [
 	Paragraph,
 	PasteFromOffice,
 	Table,
-	TableToolbar
+	TableToolbar,
+	FontBackgroundColor,
+	FontColor,
+	FontSize
 ];
 
 // Editor configuration.
@@ -76,6 +82,10 @@ BalloonEditor.defaultConfig = {
 		'indent',
 		'outdent',
 		'alignment',
+		'|',
+		'fontSize',
+		'fontColor',
+		'fontBackgroundColor',
 		'|',
 		'imageUpload',
 		'blockQuote',
